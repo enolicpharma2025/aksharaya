@@ -359,10 +359,88 @@ body {
 }
 
 /* Strict spacing for WP HTML content blocks */
-.strict-spacing-container > * { margin-top: 0 !important; margin-bottom: 24px !important; }
-.strict-spacing-container > *:last-child { margin-bottom: 0 !important; }
-.strict-spacing-container figure { margin-top: 0 !important; margin-bottom: 24px !important; }
-.strict-spacing-container figure > img { margin: 0 !important; }
+/* wp-event-content: preserve WordPress paragraph spacing, all text black */
+.wp-event-content {
+  color: #1c1c1c !important;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* All text elements must be black */
+.wp-event-content p,
+.wp-event-content span,
+.wp-event-content li,
+.wp-event-content td,
+.wp-event-content th,
+.wp-event-content div,
+.wp-event-content blockquote {
+  color: #1c1c1c !important;
+}
+
+/* Paragraphs: natural spacing like old site (gap between paragraphs) */
+.wp-event-content p {
+  margin-top: 0 !important;
+  margin-bottom: 1.2em !important;
+}
+
+.wp-event-content p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Headings spacing */
+.wp-event-content h1,
+.wp-event-content h2,
+.wp-event-content h3,
+.wp-event-content h4,
+.wp-event-content h5,
+.wp-event-content h6 {
+  margin-top: 1.5em !important;
+  margin-bottom: 0.5em !important;
+  color: #1c1c1c !important;
+}
+
+/* Lists */
+.wp-event-content ul,
+.wp-event-content ol {
+  margin-top: 0 !important;
+  margin-bottom: 1.2em !important;
+  padding-left: 1.5em !important;
+}
+
+.wp-event-content li {
+  margin-bottom: 0.4em !important;
+}
+
+/* Figures & images */
+.wp-event-content figure {
+  margin-top: 0 !important;
+  margin-bottom: 1.5em !important;
+}
+
+.wp-event-content figure > img {
+  margin: 0 !important;
+}
+
+/* Links stay black but underlined */
+.wp-event-content a {
+  color: #1c1c1c !important;
+  text-decoration: underline;
+}
+
+/* Strong/bold */
+.wp-event-content strong,
+.wp-event-content b {
+  color: #1c1c1c !important;
+  font-weight: 600;
+}
+
+/* em/italic */
+.wp-event-content em,
+.wp-event-content i {
+  color: #1c1c1c !important;
+}
+
+
 
 /* ─── Products Page ──────────────────────────────────────────── */
 /* Width now matches .page-container (same as Insights & Writings / Previous Events) */

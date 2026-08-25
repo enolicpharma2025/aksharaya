@@ -45,7 +45,7 @@ export async function FeaturedBlogs() {
             className="font-bold insights-header"
             style={{ color: '#111111' }}
           >
-            Insights &amp; Writings
+            Past Events
           </h2>
           <Link
             href="/events"

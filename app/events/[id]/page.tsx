@@ -132,15 +132,15 @@ export default async function EventDetailPage({
             <div className="event-detail-content">
               {cleanContent && (
                 <div
-                  className="prose max-w-none strict-spacing-container
+                  className="prose max-w-none wp-event-content
                              prose-headings:font-semibold
                              prose-headings:text-[#1c1c1c]
                              prose-h1:text-[28px] md:prose-h1:text-[32px]
                              prose-h2:text-[22px] md:prose-h2:text-[24px]
                              prose-h3:text-[18px] md:prose-h3:text-[20px]
-                             prose-p:text-[#555555]
+                             prose-p:text-[#1c1c1c]
                              prose-p:text-[16px]
-                             prose-p:leading-relaxed
+                             prose-p:leading-[1.8]
                              prose-img:rounded-none
                              prose-img:w-full
                              prose-a:text-[#1c1c1c]
