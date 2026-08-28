@@ -36,14 +36,15 @@ export default async function EventsPage() {
                 style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', textDecoration: 'none' }}
                 className="group"
               >
-                {/* PostImage: height=280px */}
-                <div style={{ width: '100%', height: '280px', overflow: 'hidden', position: 'relative', flexShrink: 0 }}>
+                {/* PostImage: wide aspect + contain so banners show full width; left-aligned so
+                    the image lines up with the text below (no centered indent) */}
+                <div className="event-card-img" style={{ width: '100%', aspectRatio: '5 / 2', overflow: 'hidden', position: 'relative', flexShrink: 0, backgroundColor: '#f2f2f2' }}>
                   <Image
                     src={event.coverImage}
                     alt={event.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain object-left transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
 
