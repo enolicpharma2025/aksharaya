@@ -62,6 +62,9 @@ export default async function EventDetailPage({
           {/* Mobile only: some WordPress content uses fixed-width figures/images
               (e.g. width:645px) that overflow narrow phones — cap them to the container */}
           <style>{`
+            /* Hero: use a wide banner aspect ratio instead of a fixed tall height,
+               so short/wide cover images aren't zoomed & upscaled ("stretched"). */
+            .event-detail-hero { aspect-ratio: 2 / 1 !important; height: auto !important; }
             @media (max-width: 767px) {
               .event-detail-content figure { max-width: 100% !important; width: auto !important; }
               .event-detail-content img { max-width: 100% !important; height: auto !important; }
