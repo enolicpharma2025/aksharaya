@@ -76,8 +76,8 @@ export function ProductDetail({ product }: Props) {
         {/* CTA Button */}
         <div>
           <a
-            href={product.buyLink || '#'}
-            target={product.buyLink && product.buyLink !== '#' ? '_blank' : undefined}
+            href="https://forms.gle/WXa5KzWzL4x3ottW6"
+            target="_blank"
             rel="noopener noreferrer"
             className="group relative overflow-hidden block w-full text-center"
             style={{
